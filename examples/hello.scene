@@ -1,0 +1,24 @@
+# A minimal scene: a caption, some typing, a wait, and a final hold.
+size 80x22
+init init.lua
+cwd .
+out out/hello.gif
+cast out/hello.cast
+
+# No font directives: agg's default font list works across systems.
+font-size 17
+line-height 1.06
+theme nord
+fps 20
+
+# Show what is being typed in a ticker above the statusline.
+keycast on
+
+caption nvim-demo  ·  a scripted Neovim session
+sleep 400ms
+key i
+type hello from nvim-demo
+key <Esc>
+sleep 600ms
+wait hello from nvim-demo
+sleep 400ms
