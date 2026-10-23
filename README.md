@@ -1,4 +1,4 @@
-# nvim-demo-tool
+# nvim-demo-generator
 
 Records a scripted Neovim session and renders it as a GIF.
 
@@ -15,8 +15,8 @@ needed for `wait` steps.
 ## Install
 
 ```sh
-git clone <this-repo> ~/src/nvim-demo-tool
-ln -s ~/src/nvim-demo-tool/bin/nvim-demo ~/.local/bin/nvim-demo
+git clone <this-repo> ~/src/nvim-demo-generator
+ln -s ~/src/nvim-demo-generator/bin/nvim-demo ~/.local/bin/nvim-demo
 ```
 
 agg and pyte can be installed with `brew install agg` and `pip install pyte`.
